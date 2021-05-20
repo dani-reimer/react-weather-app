@@ -23,14 +23,14 @@ export default function CurrentTemperature() {
         <div className="col-6 right-temperature-details">
           <span className="currentTemp">{weatherData.temperature}</span>
           <sup>
-            <a href="#" class="active">
+            
               {" "}
               ℃
-            </a>{" "}
+            {" "}
             |{" "}
           </sup>
           <sup>
-            <a href="#">℉</a>
+            ℉
           </sup>
         </div>
         <h4 className="weatherDescription">{weatherData.description}</h4>
@@ -39,10 +39,10 @@ export default function CurrentTemperature() {
         Humidity: {weatherData.humidity}
         <br />
         Wind: {weatherData.wind}{" "}
-        <a href="/" className="active">
+        
           km/h
-        </a>{" "}
-        | <a href="/">mph</a>
+        {" "}
+        | mph
       </div>
     </div>
   );
