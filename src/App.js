@@ -1,19 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import Weather from "./Weather";
-
-function App() {
+import "./App.css";
+import Header from "./Header";
+import Body from "./Body";
+import Footer from "./Footer";
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
-          Hello World I did it!
-        </h1>
-        <Weather />
-      </header>
+      <title>Weather</title>
+      <Header />
+      <Body />
+      <Footer />
     </div>
   );
 }
-
-export default App;
