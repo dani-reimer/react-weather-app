@@ -1,19 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
 h2 {
   font-size: 18px;
   padding: 0;
+  font-family: "Montserrat";
 }
 
 h4 {
   text-transform: uppercase;
+  font-family: "Montserrat";
   font-size: 14px;
   font-weight: 800;
   margin-top: 0;
 }
 h5 {
   font-size: 14px;
+  font-family: "Montserrat";
 }
 p {
   font-size: smaller;
+  font-family: "Montserrat";
   padding-top: 10px;
 }
 
@@ -57,10 +63,12 @@ body {
 .celcius {
   font-size: 9px;
   vertical-align: top;
+  font-family: "Montserrat";
 }
 .fahrenheit {
   font-size: 9px;
   vertical-align: top;
+  font-family: "Montserrat";
 }
 a {
   text-decoration: none;
@@ -71,6 +79,7 @@ a {
 .forecast {
   text-align: center;
   font-size: 10px;
+  font-family: "Montserrat";
 }
 
 .right-temperature-details {
@@ -91,11 +100,13 @@ a {
   font-size: 11px;
   color: hsl(0, 0%, 0%);
   opacity: 0.7;
-  margin-left: 20px;
+  margin-left: 50px;
+  font-family: "Montserrat";
 }
 
 .currentTemp {
   font-size: 26px;
+  font-family: "Montserrat";
 }
 .active {
   color: black;
