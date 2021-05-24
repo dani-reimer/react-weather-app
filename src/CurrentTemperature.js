@@ -1,4 +1,5 @@
 import React from "react";
+import "./CurrentTemperature.css";
 
 export default function CurrentTemperature() {
   let weatherData = {
