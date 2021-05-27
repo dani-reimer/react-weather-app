@@ -1,0 +1,11 @@
+#search-text-input {
+  max-width: 100%;
+  margin-bottom: 2px;
+}
+#search-button {
+  border-radius: 4px;
+}
+#current-location {
+  margin-left: 2px;
+  border-radius: 4px;
+}

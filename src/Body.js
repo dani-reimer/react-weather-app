@@ -1,4 +1,5 @@
 import React from "react";
+import "./Body.css";
 import Search from "./Search";
 import Forecast from "./Forecast";
 import Updated from "./Updated";
