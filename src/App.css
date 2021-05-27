@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
-
+.App {
+  max-width: 600px;
+}
 a {
   text-decoration: none;
   font-weight: lighter;
@@ -17,6 +19,3 @@ a {
   color: hsl(0, 0%, 0%);
   font-weight: bolder;
 }
-
-
-

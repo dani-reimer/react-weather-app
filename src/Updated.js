@@ -9,11 +9,10 @@ export default function Updated() {
   return (
     <p className="updated">
       Last updated:
-      <h5>
-        {currentTime.date}
-        <br />
+      <br />
+        {currentTime.date}<br />
         {currentTime.time}
-      </h5>
+    
     </p>
   );
 }

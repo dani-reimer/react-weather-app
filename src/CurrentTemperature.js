@@ -11,17 +11,17 @@ export default function CurrentTemperature() {
     imgUrl: "https://openweathermap.org/img/wn/10d@2x.png"
   };
   return (
-    <div>
+    <div className="current-temperature-section">
       <h2>{weatherData.city}</h2>
       <div className="row">
-        <div className="col-6 right-temperature-details">
+        <div className="right-temperature-details">
           <img
             src={weatherData.imgUrl}
             alt={weatherData.description}
             className="weatherIcon"
           />
         </div>
-        <div className="col-6 right-temperature-details">
+        <div className="right-temperature-details">
           <span className="currentTemp">{weatherData.temperature}</span>
           <sup>
             
