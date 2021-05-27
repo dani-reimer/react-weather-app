@@ -1,51 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
-h2 {
-  font-size: 18px;
-  padding: 0;
-  font-family: "Montserrat";
-}
 
-h4 {
-  text-transform: uppercase;
-  font-family: "Montserrat";
-  font-size: 14px;
-  font-weight: 800;
-  margin-top: 0;
-}
-h5 {
-  font-size: 14px;
-  font-family: "Montserrat";
-}
-p {
-  font-size: smaller;
-  font-family: "Montserrat";
-  padding-top: 10px;
-}
-
-
-.updated {
-  color: hsl(0, 0%, 0%);
-  opacity: 0.6;
-  margin-bottom: 0;
-  font-size: 12px;
-}
-.humidity {
-  text-transform: uppercase;
-  font-size: 10px;
-  font-weight: bolder;
-}
-
-.celcius {
-  font-size: 9px;
-  vertical-align: top;
-  font-family: "Montserrat";
-}
-.fahrenheit {
-  font-size: 9px;
-  vertical-align: top;
-  font-family: "Montserrat";
-}
 a {
   text-decoration: none;
   font-weight: lighter;
@@ -58,15 +13,7 @@ a {
   font-family: "Montserrat";
 }
 
-.right-temperature-details {
-  margin-top: -5px;
-}
 
-
-.current-temperature-section {
-  text-align: right;
-  padding-bottom: 20px;
-}
 .footer {
   font-size: 11px;
   color: hsl(0, 0%, 0%);
@@ -75,10 +22,6 @@ a {
   font-family: "Montserrat";
 }
 
-.currentTemp {
-  font-size: 26px;
-  font-family: "Montserrat";
-}
 .active {
   color: black;
   text-decoration: none;
@@ -95,6 +38,3 @@ a {
   color: black;
 }
 
-.weatherDescription {
-  margin-top: -15px;
-}

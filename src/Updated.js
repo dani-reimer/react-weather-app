@@ -1,4 +1,5 @@
 import React from "react";
+import "./Updated.css";
 
 export default function Updated() {
   let currentTime = {
