@@ -1,4 +1,5 @@
 import React from "react";
+import "./Forecast.css";
 import ForecastDate from "./ForecastDate";
 
 export default function Forecast() {

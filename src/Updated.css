@@ -8,3 +8,9 @@ h5 {
   font-size: 14px;
   font-family: "Montserrat";
 }
+
+p {
+  font-size: smaller;
+  font-family: "Montserrat";
+  padding-top: 10px;
+}
