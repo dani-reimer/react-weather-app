@@ -2,7 +2,11 @@ body {
   padding-top: 25px;
   font-family: "Montserrat", sans-serif;
 }
-
+form {
+  margin-left: 2px;
+  border-radius: 4px;
+  max-width: 100%;
+}
 .container {
   margin-left: 5px;
 }

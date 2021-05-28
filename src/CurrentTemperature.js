@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CurrentTemperature.css";
+import axios from "axios";
 
 export default function CurrentTemperature() {
   let weatherData = {
