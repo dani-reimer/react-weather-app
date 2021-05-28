@@ -7,6 +7,23 @@ form {
   border-radius: 4px;
   max-width: 100%;
 }
+
+.updated {
+  color: hsl(0, 0%, 0%);
+  opacity: 0.6;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+h5 {
+  font-size: 14px;
+  font-family: "Montserrat";
+}
+
+p {
+  font-size: smaller;
+  font-family: "Montserrat";
+  padding-top: 10px;
+}
 .container {
   margin-left: 5px;
 }
@@ -27,4 +44,45 @@ form {
 .row {
   --bs-gutter-x: 0.3rem;
   --bs-gutter-y: 0.3rem;
+}
+.weatherIcon {
+  height: 72px;
+  padding: 0;
+  margin: 0 auto;
+}
+.current-temperature-section {
+  text-align: right;
+  font-family: "Montserrat";
+  padding-bottom: 14px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.currentTemp {
+  font-size: 26px;
+}
+
+.humidity {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.celcius {
+  font-size: 9px;
+  vertical-align: top;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.fahrenheit {
+  font-size: 9px;
+  vertical-align: top;
+  font-family: Arial, Helvetica, sans-serif;
 }
