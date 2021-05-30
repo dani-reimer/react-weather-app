@@ -3,19 +3,17 @@ import React from "react";
 
 export default function WeatherData(props) {
     return (
-        <div>
-        
-<div className="current-temperature-section">
+        <div className="current-temperature-section">
       <h2>{props.data.city}</h2>
       <div className="row">
-        <div className="right-temperature-details">
+        <div className="col-6 right-temperature-details">
           <img
             src={props.data.icon}
             alt={props.data.description}
             className="weatherIcon"
           />
         </div>
-        <div className="right-temperature-details">
+        <div className="col-6 right-temperature-details">
           <span className="currentTemp">{props.data.temperature}</span>
           <sup>
             
@@ -40,8 +38,5 @@ export default function WeatherData(props) {
         | mph
       </div>
                 </div>
-                </div>
-        
-
     );
 }

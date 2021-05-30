@@ -52,17 +52,17 @@ export default function Weather(props) {
                         Locate Me
         </button>
                     </div>{" "}
-                  </form></div><div className="WeatherData"> 
+                  </form>
         <p className="updated">
       Last updated:
       <br />
      <FormattedDate date={weatherData.date}/><br />
       
-    </p>
-        </div>
-           </div></div><div>
-<div className="col-6 current-temperature-section">
-                  </div><WeatherData data={weatherData}/>
+    </p></div><div className="col-6 WeatherData"> 
+        
+           <div>
+<div className="current-temperature-section">
+                  </div><WeatherData data={weatherData}/></div></div></div>
                   <div className="row forecast">
               <Forecast />
             </div>{" "}
