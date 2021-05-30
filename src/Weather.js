@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
 import Forecast from "./Forecast";
-import FormattedDate from "./FormattedDate";
+import WeatherData from "./WeatherData";
+
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready : false });
@@ -51,61 +52,18 @@ export default function Weather(props) {
                         Locate Me
         </button>
                     </div>{" "}
-                  </form>
-                   <p className="updated">
-      Last updated:
-      <br />
-     <FormattedDate date={weatherData.date}/><br />
-      
-    </p>
-                </div>
-
-                <div className="col-6 current-temperature-section">
-                  <div className="current-temperature-section">
-      <h2>{weatherData.city}</h2>
-      <div className="row">
-        <div className="right-temperature-details">
-          <img
-            src={weatherData.icon}
-            alt={weatherData.description}
-            className="weatherIcon"
-          />
-        </div>
-        <div className="right-temperature-details">
-          <span className="currentTemp">{weatherData.temperature}</span>
-          <sup>
-            
-              {" "}
-              ℃
-            {" "}
-            |{" "}
-          </sup>
-          <sup>
-            ℉
-          </sup>
-        </div>
-        <h4 className="weatherDescription">{weatherData.description}</h4>
-      </div>
-      <div className="humidity">
-        Humidity: {weatherData.humidity}
-        <br />
-        Wind: {weatherData.wind}{" "}
-        
-          km/h
-        {" "}
-        | mph
-      </div>
-    </div>
-                </div>
-              </div>
-            </div>
-            <div className="row forecast">
+                  </form></div>
+                  <WeatherData data={weatherData}/>
+                  <div className="row forecast">
               <Forecast />
             </div>{" "}
           </div>
         </div>
-      </div>
-    );
+      </div >
+          </div>
+        </div>
+        
+                   );
   }
   else {
     const apiKey = "afd2be167f88dd904bc213780db71233";
