@@ -60,16 +60,16 @@ export default function Weather(props) {
       
     </p></div><div className="col-6 WeatherData"> 
         
-           <div>
-<div className="current-temperature-section">
+           
+<div>
                   </div><WeatherData data={weatherData}/></div></div></div>
                   <div className="row forecast">
               <Forecast />
             </div>{" "}
           </div>
         </div>
-      </div >
-          </div>
+      </div>
+          
         
         
                    );

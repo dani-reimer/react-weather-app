@@ -25,7 +25,7 @@ export default function WeatherData(props) {
           <sup>
             ℉
           </sup>
-        </div>
+        
         <h4 className="weatherDescription">{props.data.description}</h4>
       </div>
       <div className="humidity">
@@ -36,7 +36,7 @@ export default function WeatherData(props) {
           km/h
         {" "}
         | mph
-      </div>
+      </div></div>
                 </div>
     );
 }
