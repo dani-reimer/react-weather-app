@@ -1,19 +1,10 @@
 import React from "react";
-import FormattedDate from "./FormattedDate";
+
 
 export default function WeatherData(props) {
     return (
         <div>
-        <div className="WeatherData"> 
-        <p className="updated">
-      Last updated:
-      <br />
-     <FormattedDate date={props.data.date}/><br />
-      
-    </p>
-        </div>
-           
-<div className="col-6 current-temperature-section">
+        
 <div className="current-temperature-section">
       <h2>{props.data.city}</h2>
       <div className="row">
@@ -50,7 +41,7 @@ export default function WeatherData(props) {
       </div>
                 </div>
                 </div>
-        </div>
+        
 
     );
 }

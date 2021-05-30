@@ -3,7 +3,7 @@ import axios from "axios";
 import "./Weather.css";
 import Forecast from "./Forecast";
 import WeatherData from "./WeatherData";
-
+import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready : false });
@@ -52,8 +52,17 @@ export default function Weather(props) {
                         Locate Me
         </button>
                     </div>{" "}
-                  </form></div>
-                  <WeatherData data={weatherData}/>
+                  </form></div><div className="WeatherData"> 
+        <p className="updated">
+      Last updated:
+      <br />
+     <FormattedDate date={weatherData.date}/><br />
+      
+    </p>
+        </div>
+           </div></div><div>
+<div className="col-6 current-temperature-section">
+                  </div><WeatherData data={weatherData}/>
                   <div className="row forecast">
               <Forecast />
             </div>{" "}
@@ -61,7 +70,7 @@ export default function Weather(props) {
         </div>
       </div >
           </div>
-        </div>
+        
         
                    );
   }
