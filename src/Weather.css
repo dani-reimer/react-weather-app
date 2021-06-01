@@ -45,11 +45,7 @@ p {
   --bs-gutter-x: 0.3rem;
   --bs-gutter-y: 0.3rem;
 }
-.weatherIcon {
-  height: 72px;
-  padding: 0;
-  margin: 0 auto;
-}
+
 .current-temperature-section {
   text-align: right;
   font-family: "Montserrat";

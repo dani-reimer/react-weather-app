@@ -1,33 +1,29 @@
 import React from "react";
-import ReactAnimatedWeather from 'react-animated-weather'; 
+import "./WeatherIcon.css";
 
 export default function WeatherIcon(props) {
     const codeMapping = {
-        "01d": "CLEAR_DAY",
-        "01n": "CLEAR_NIGHT",
-        "02d": 'PARTLY_CLOUDY_DAY',
-    "02n": 'PARTLY_CLOUDY_NIGHT',
-     "03d": 'CLOUDY',
-        "03n": 'CLOUDY',
-        "04d": 'CLOUDY',
-        "04n": 'CLOUDY',
-     "09d": 'RAIN',
-        "09n": 'RAIN',
-     "10d": 'RAIN',
-        "10n": 'RAIN',
-     "11d": 'CLOUDY',
-        "11n": 'CLOUDY',
-     "13d": 'SNOW',
-        "13n": 'SNOW',
-     "50d": 'FOG',
-    "50n": 'FOG'
+        "01d": "https://basmilius.github.io/weather-icons/production/fill/all/clear-day.svg",
+        "01n": "https://basmilius.github.io/weather-icons/production/fill/all/clear-night.svg",
+        "02d": 'https://basmilius.github.io/weather-icons/production/fill/all/partly-cloudy-day.svg',
+    "02n": 'https://basmilius.github.io/weather-icons/production/fill/all/partly-cloudy-night.svg',
+     "03d": 'https://basmilius.github.io/weather-icons/production/fill/all/cloudy.svg',
+        "03n": 'https://basmilius.github.io/weather-icons/production/fill/all/overcast-night.svg',
+        "04d": 'https://basmilius.github.io/weather-icons/production/fill/all/overcast.svg',
+        "04n": 'https://basmilius.github.io/weather-icons/production/fill/all/overcast-night.svg',
+     "09d": 'https://basmilius.github.io/weather-icons/production/fill/all/drizzle.svg',
+        "09n": 'https://basmilius.github.io/weather-icons/production/fill/all/partly-cloudy-night-drizzle.svg',
+     "10d": 'https://basmilius.github.io/weather-icons/production/fill/all/rain.svg',
+        "10n": 'https://basmilius.github.io/weather-icons/production/fill/all/partly-cloudy-night-rain.svg',
+     "11d": 'https://basmilius.github.io/weather-icons/production/fill/all/thunderstorms.svg',
+        "11n": 'https://basmilius.github.io/weather-icons/production/fill/all/thunderstorms.svg',
+     "13d": 'https://basmilius.github.io/weather-icons/production/fill/all/snow.svg',
+        "13n": 'https://basmilius.github.io/weather-icons/production/fill/all/snow.svg',
+     "50d": 'https://basmilius.github.io/weather-icons/production/fill/all/fog.svg',
+    "50n": 'https://basmilius.github.io/weather-icons/production/fill/all/fog.svg'
 
     }
     return (
-  <ReactAnimatedWeather
-            icon={codeMapping[props.code]}
-            color="black"
-            size={64}
-            animate={true}
-  />
+        <img src={codeMapping[props.code]} alt={props.description} className="WeatherIcon" />
+            
 );}

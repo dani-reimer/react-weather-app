@@ -7,7 +7,7 @@ export default function WeatherData(props) {
       <h2>{props.data.city}</h2>
       <div className="row">
                 <div className="col-6 right-temperature-details">
-                    <WeatherIcon code={props.data.icon}/>
+                    <WeatherIcon code={props.data.icon} description={props.data.description}/>
         </div>
         <div className="col-6 right-temperature-details">
           <span className="currentTemp">{props.data.temperature}</span>
