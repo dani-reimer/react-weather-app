@@ -7,7 +7,7 @@ import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready : false });
- 
+ const [city, setCity] = useState(props.defaultCity);
   function showWeather(response) {
     
     setWeatherData({
@@ -18,10 +18,22 @@ export default function Weather(props) {
         humidity: response.data.main.humidity,
       city: response.data.name,
       description: response.data.weather[0].description,
-        icon: "http://openweathermap.org/img/wn/01d@2x.png"
+        icon: response.data.weather[0].icon
     });
   }
+  function search() {
+     const apiKey = "afd2be167f88dd904bc213780db71233";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+    axios.get(apiUrl).then(showWeather);
+  }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
+  function handleCity(event) {
+    setCity(event.target.value);
+  }
   if (weatherData.ready) {
     return (
       <div className="Body">
@@ -30,12 +42,13 @@ export default function Weather(props) {
             <div className="card-body">
               <div className="row">
                 <div className="col-6 first-column">
-                  <form id="search-city">
+                  <form onSubmit={handleSubmit} id="search-city" >
                     <input
                       type="text"
                       className="form-control w-100"
                       placeholder="Enter City"
                       autoFocus="on"
+                      onChange={handleCity}
         
                     />
                     <div className="btn-group">
@@ -75,10 +88,7 @@ export default function Weather(props) {
                    );
   }
   else {
-    const apiKey = "afd2be167f88dd904bc213780db71233";
-    let city = props.defaultCity;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
-    axios.get(apiUrl).then(showWeather);
+    search();
     return "Loading...";
   }
   }
