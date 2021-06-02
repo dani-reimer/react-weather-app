@@ -2,6 +2,7 @@ import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
 
+
 export default function WeatherData(props) {
     return (
         <div className="current-temperature-section">

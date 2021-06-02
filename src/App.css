@@ -6,11 +6,13 @@
 a {
   text-decoration: none;
   font-weight: lighter;
+  font-family: Montserrat;
   color: rgb(99, 98, 98);
 }
 
 .active {
   color: black;
+  font-family: Montserrat;
   text-decoration: none;
   cursor: default;
   font-weight: bolder;
