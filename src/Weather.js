@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
-import Forecast from "./Forecast";
+import ForecastDate from "./ForecastDate";
 import WeatherData from "./WeatherData";
 import FormattedDate from "./FormattedDate";
 
@@ -14,10 +14,10 @@ export default function Weather(props) {
       ready: true,
       date: new Date(response.data.dt * 1000),
       temperature: Math.round(response.data.main.temp),
+      coordinates: response.data.coord,
         wind: Math.round(response.data.wind.speed),
         humidity: response.data.main.humidity,
       city: response.data.name,
-      coordinates: response.data.coord,
       description: response.data.weather[0].description,
         icon: response.data.weather[0].icon
     });
@@ -67,17 +67,17 @@ export default function Weather(props) {
         </button>
                     </div>{" "}
                   </form>
-        <p className="updated">
+        <div className="updated">
       Last updated:
       <br />
      <FormattedDate date={weatherData.date}/><br />
       
-    </p></div><div className="col-6 WeatherData"> 
+    </div></div><div className="col-6 WeatherData"> 
         
            
 <WeatherData data={weatherData}/></div></div></div>
                   <div className="row forecast">
-              <Forecast coordinates={weatherData.coordinates}/>
+              <ForecastDate coordinates={weatherData.coordinates} />
             </div>{" "}
           </div>
         </div>
