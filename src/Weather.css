@@ -85,3 +85,21 @@ h4 {
   vertical-align: top;
   font-family: Arial, Helvetica, sans-serif;
 }
+a {
+  text-decoration: none;
+  font-weight: lighter;
+  font-family: Montserrat;
+  color: rgb(99, 98, 98);
+}
+
+.active {
+  color: black;
+  font-family: Montserrat;
+  text-decoration: none;
+  cursor: default;
+  font-weight: bolder;
+}
+.active:hover {
+  color: hsl(0, 0%, 0%);
+  font-weight: bolder;
+}

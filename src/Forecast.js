@@ -2,15 +2,10 @@ import React from "react";
 import "./Forecast.css";
 import ForecastDate from "./ForecastDate";
 
-export default function Forecast() {
+export default function Forecast(props) {
   return (
     <div className="row forecast">
-      <ForecastDate />
-      <ForecastDate />
-      <ForecastDate />
-      <ForecastDate />
-      <ForecastDate />
-      <ForecastDate />
-      
+      <ForecastDate coordinates={props.coordinates} />
+     
     </div>);
 }

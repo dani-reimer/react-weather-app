@@ -17,6 +17,7 @@ export default function Weather(props) {
         wind: Math.round(response.data.wind.speed),
         humidity: response.data.main.humidity,
       city: response.data.name,
+      coordinates: response.data.coord,
       description: response.data.weather[0].description,
         icon: response.data.weather[0].icon
     });
@@ -74,10 +75,9 @@ export default function Weather(props) {
     </p></div><div className="col-6 WeatherData"> 
         
            
-<div>
-                  </div><WeatherData data={weatherData}/></div></div></div>
+<WeatherData data={weatherData}/></div></div></div>
                   <div className="row forecast">
-              <Forecast />
+              <Forecast coordinates={weatherData.coordinates}/>
             </div>{" "}
           </div>
         </div>
