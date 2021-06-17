@@ -1,10 +1,7 @@
-img {
- max-height: 50px;
-}
-
 .forecast {
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
   font-family: "Montserrat";
+  padding-top: 15px;
 }
 
